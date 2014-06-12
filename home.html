@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	// Initializes the carousel
+    $(".start-slide").click(function(){
+    	$("#myCarousel").carousel('cycle');
+    });
+	// Stops the carousel
+    $(".pause-slide").click(function(){
+    	$("#myCarousel").carousel('pause');
+    });
+	// Cycles to the previous item
+    $(".prev-slide").click(function(){
+    	$("#myCarousel").carousel('prev');
+    });
+	// Cycles to the next item
+    $(".next-slide").click(function(){
+    	$("#myCarousel").carousel('next');
+    });
+	// Cycles the carousel to a particular frame 
+    $(".slide-one").click(function(){
+    	$("#myCarousel").carousel(0);
+    });
+    $(".slide-two").click(function(){
+    	$("#myCarousel").carousel(1);
+    });
+    $(".slide-three").click(function(){
+    	$("#myCarousel").carousel(2);
+    });
+});
+</script>
+
+<link rel="stylesheet" media="screen and (min-width: 1025px)" href="css/style.css" />
+<link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="css/tablet.css" />
+<link rel="stylesheet" media="screen and (max-width: 767px)" href="css/smartphone.css" />
+
+
+</head>
+
+<body>
+	
+	<nav role="navigation" class="main-navigation">
+		<ul class="menu">
+			<li><a href="#">Organisation</a>
+				<ul>
+					<li><a href="#">Board</a></li>
+					<li><a href="#">Sponsors</a></li>
+					<li><a href="#">Documents</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Projects</a>
+				<ul>
+					<li><a href="#">Past Projects</a>
+				</ul>
+			</li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Events</a></li>
+			<li><a href="#">Get involved</a>
+				<ul>
+					<li><a href="#">Join us</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Old site</a></li>
+		</ul>
+	</nav><!-- .main-navigation -->
+	
+	<header>
+		<a href="home.html"><img src="insiniors.jpg" id="logo" /></a>
+		<a href="home.html"><img src="insiniors_tablet.png" id="logo-tablet" /></a>
+	</header>
+	
+	<div id="tertiary">
+	<img src="http://placehold.it/140x100">
+	<p>Sponsor 1</p>
+	<img src="http://placehold.it/140x100">
+	<p>Sponsor 2 </p>
+	<img src="http://placehold.it/140x100">
+	<p>Sponsor 3 </p>
+	<img src="http://placehold.it/140x100">
+	<p>Sponsor 4 </p>
+	<img src="http://placehold.it/140x100">
+	<p>Sponsor 5</p>
+	<img src="http://placehold.it/140x100">
+	<p>Sponsor 6</p>
+	</div>
+	
+	<div id="main" class="site-main">
+	
+	
+	<div class="bs-example">
+    <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+    	<!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>   
+       <!-- Carousel items -->
+        <div class="carousel-inner">
+            <div class="active item">
+                <h2>Slide 1</h2>
+                <div class="carousel-caption">
+                  <h3>First slide label</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="item">
+                <h2>Slide 2</h2>
+                <div class="carousel-caption">
+                  <h3>Second slide label</h3>
+                  <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+                </div>
+            </div>
+            <div class="item">
+                <h2>Slide 3</h2>
+                <div class="carousel-caption">
+                  <h3>Third slide label</h3>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</div>
+		
+		<div id="content" class="site-content" role="main">
+		<p>Suomen Insinöörit ilman rajoja ry toimii yhteistyössä Engineers Without Borders International -yhdistyksen ja sen muiden alajärjestöjen kanssa. Yhdistys pyrkii parantamaan ihmisten elintasoa kehittyvissä maissa, tuomaan koulutusta ja tietoa kaikkien ulottuville ja tuomaan apua kriiseihin maailmalla.</p>
+		<p>Pyrimme löytämään käytännöllisiä ratkaisuja puhtaan juomaveden tuottamiseen, maanviljelyyn, rakennustekniikkaan, energiantuotantoon, liikennöintiin ja tiedonvälitykseen. Tuemme kestävää kehitystä, josta on iloa monille tuleville sukupolville.</p>
+		<p>Toivotamme kaikki kiinnostuneet tervetulleiksi mukaan toimintaamme. Jäseneksi voi liittyä milloin vain.</p>
+		</div><!-- #content .site-content -->
+		
+		<div id="secondary">
+<h1>Habent enim et bene longam et satis litigiosam disputationem.</h1>
+
+<p><a href="#">Lorem ipsum</a></p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tria genera cupiditatum, naturales et necessariae, naturales et non necessariae, nec naturales nec necessariae. Sed utrum hortandus es nobis, Luci, inquit, an etiam tua sponte propensus es? Hoc etsi multimodis reprehendi potest, tamen accipio, quod dant. Philosophi autem in suis lectulis plerumque moriuntur. </p>
+
+<h3>Omnia contraria, quos etiam insanos esse vultis.</h3>
+
+<p>Tu quidem reddes; Mihi, inquam, qui te id ipsum rogavi? Quid ergo attinet gloriose loqui, nisi constanter loquare? Isto modo, ne si avia quidem eius nata non esset. Ut non sine causa ex iis memoriae ducta sit disciplina. Unum nescio, quo modo possit, si luxuriosus sit, finitas cupiditates habere. Quis istud possit, inquit, negare? Quos quidem tibi studiose et diligenter tractandos magnopere censeo. </p>
+
+<p>Qua tu etiam inprudens utebare non numquam. Duo Reges: constructio interrete. Philosophi autem in suis lectulis plerumque moriuntur. Ut non sine causa ex iis memoriae ducta sit disciplina. Non igitur potestis voluptate omnia dirigentes aut tueri aut retinere virtutem. Pollicetur certe. Quod quidem iam fit etiam in Academia. Quia dolori non voluptas contraria est, sed doloris privatio. </p>
+
+<p>Quamvis enim depravatae non sint, pravae tamen esse possunt. Restatis igitur vos; Bonum negas esse divitias, praeposìtum esse dicis? An me, inquam, nisi te audire vellem, censes haec dicturum fuisse? Scientiam pollicentur, quam non erat mirum sapientiae cupido patria esse cariorem. Est enim effectrix multarum et magnarum voluptatum. Nummus in Croesi divitiis obscuratur, pars est tamen divitiarum. Isto modo ne improbos quidem, si essent boni viri. Nulla profecto est, quin suam vim retineat a primo ad extremum. Numquam facies. </p>
+
+<h2>Idem iste, inquam, de voluptate quid sentit?</h2>
+
+<p>Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Tubulum fuisse, qua illum, cuius is condemnatus est rogatione, P. Haec dicuntur fortasse ieiunius; Mihi enim erit isdem istis fortasse iam utendum. Summus dolor plures dies manere non potest? An tu me de L. </p>
+
+
+		</div><!-- #secondary .widget-area -->
+	
+	</div><!-- #main .site-main -->
+	
+	<footer role="contentinfo">
+	Jalkateksti ym.
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,433 @@
+
+/* =Global
+----------------------------------------------- */
+ 
+body,
+button,
+input,
+select,
+textarea {
+    color: #404040;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+ 
+/* Headings */
+h1,h2,h3,h4,h5,h6 {
+    clear: both;
+}
+hr {
+    background-color: #ccc;
+    border: 0;
+    height: 1px;
+    margin-bottom: 1.5em;
+}
+ 
+/* Text elements */
+p {
+    margin-bottom: 1.5em;
+}
+ul, ol {
+    margin: 0 0 1.5em 3em;
+}
+ul {
+    list-style: disc;
+}
+ol {
+    list-style: decimal;
+}
+ul ul, ol ol, ul ol, ol ul {
+    margin-bottom: 0;
+    margin-left: 1.5em;
+}
+dt {
+    font-weight: bold;
+}
+dd {
+    margin: 0 1.5em 1.5em;
+}
+b, strong {
+    font-weight: bold;
+}
+dfn, cite, em, i {
+    font-style: italic;
+}
+blockquote {
+    margin: 0 1.5em;
+}
+address {
+    margin: 0 0 1.5em;
+}
+pre {
+    background: #eee;
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    padding: 1.6em;
+    overflow: auto;
+    max-width: 100%;
+}
+code, kbd, tt, var {
+    font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+abbr, acronym {
+    border-bottom: 1px dotted #666;
+    cursor: help;
+}
+mark, ins {
+    background: #fff9c0;
+    text-decoration: none;
+}
+sup,
+sub {
+    font-size: 75%;
+    height: 0;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    bottom: 1ex;
+}
+sub {
+    top: .5ex;
+}
+small {
+    font-size: 75%;
+}
+big {
+    font-size: 125%;
+}
+figure {
+    margin: 0;
+}
+table {
+    margin: 0 0 1.5em;
+    width: 100%;
+}
+th {
+    font-weight: bold;
+}
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* Corrects font size not being inherited in all browsers */
+    margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+    vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+    *vertical-align: middle; /* Improves appearance and consistency in all browsers */
+}
+button,
+input {
+    line-height: normal; /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
+    *overflow: visible;  /* Corrects inner spacing displayed oddly in IE6/7 */
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    border: 1px solid #ccc;
+    border-color: #ccc #ccc #bbb #ccc;
+    border-radius: 3px;
+    background: #e6e6e6;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 15px 17px rgba(255,255,255,0.5), inset 0 -5px 12px rgba(0,0,0,0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 15px 17px rgba(255,255,255,0.5), inset 0 -5px 12px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 15px 17px rgba(255,255,255,0.5), inset 0 -5px 12px rgba(0,0,0,0.05);
+    color: rgba(0,0,0,.8);
+    cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+    -webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
+    font-size: 12px;
+    font-size: 1.4rem;
+    line-height: 1;
+    padding: 1.12em 1.5em 1em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.8);
+}
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    border-color: #ccc #bbb #aaa #bbb;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), inset 0 15px 17px rgba(255,255,255,0.8), inset 0 -5px 12px rgba(0,0,0,0.02);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), inset 0 15px 17px rgba(255,255,255,0.8), inset 0 -5px 12px rgba(0,0,0,0.02);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), inset 0 15px 17px rgba(255,255,255,0.8), inset 0 -5px 12px rgba(0,0,0,0.02);
+}
+button:focus,
+html input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+html input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+    border-color: #aaa #bbb #bbb #bbb;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(255,255,255,0.5), inset 0 2px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: inset 0 -1px 0 rgba(255,255,255,0.5), inset 0 2px 5px rgba(0,0,0,0.15);
+    box-shadow: inset 0 -1px 0 rgba(255,255,255,0.5), inset 0 2px 5px rgba(0,0,0,0.15);
+}
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* Addresses box sizing set to content-box in IE8/9 */
+    padding: 0; /* Addresses excess padding in IE8/9 */
+}
+input[type="search"] {
+    -webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+    box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+    -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+    border: 0;
+    padding: 0;
+}
+input[type=text],
+input[type=email],
+textarea {
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+    color: #111;
+}
+input[type=text],
+input[type=email] {
+    padding: 3px;
+}
+textarea {
+    overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+    padding-left: 3px;
+    vertical-align: top; /* Improves readability and alignment in all browsers */
+    width: 98%;
+}
+ 
+/* Links */
+a {
+    color: #435962;
+}
+a:visited {
+    color: #90849a;
+}
+a:hover,
+a:focus,
+a:active {
+    color: #30455e;
+	outline: 0;
+}
+
+/* Alignment */
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+}
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+}
+.aligncenter {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+}
+ 
+/* Text meant only for screen readers */
+.assistive-text {
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+}
+
+/* Structure 
+------------------------------------------------ */
+body {
+	padding-bottom: 6em;
+	/*background: linear-gradient(#3f6e8f, #abd8ef);
+	background: -webkit-linear-gradient(#3f6e8f, #abd8ef);
+	background: -o-linear-gradient(#3f6e8f, #abd8ef);*/
+	background: linear-gradient(#205169, #205169);
+	background: -webkit-linear-gradient(#205169, #205169);
+	background: -o-linear-gradient(#205169, #205169);
+	position: relative;
+	color: #46403d;
+	font-size: 160%;
+	font-family: Arial, sans-serif;
+}
+#main {
+	position: relative;
+	margin: 8% 0 0 0;
+    overflow: hidden;
+	width: 85%;
+	background: #fbfbfb;
+	border-right: 1px solid #a8bdb9;
+	border-left: 1px solid #a8bdb9;
+	border-bottom: 1px solid #a8bdb9;
+}
+#content {
+	padding-top: 2em;
+	padding-left: .5em;
+	width: 66%;
+	min-width: 20em;
+	min-height: 100%;
+	float: right;
+	margin: 0 2% 0 0;
+	background: #fbfbfb;
+}
+#secondary { /* Sidebar */
+	margin: -40% 0 0 0;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	float: left;
+	overflow: hidden;
+	background: #ededed;
+	border: 1px solid #ededed;
+	width: 29.4%;
+	border-bottom-left-radius: 6px;
+}
+#tertiary {  /* Sponsorit */
+	clear: both;
+	padding-top: 3em;
+	position: fixed;
+	margin: -4% 0 0 85%;
+    width: 15%;
+	background: #205169;
+	color: #4e7588;
+}
+footer {
+	clear: both;
+	width: 100%;
+	text-align: center;
+	color: #4e7588;
+}
+
+/* Header
+------------------------------------- */
+
+header {
+	width: 100%;
+	margin: 0 auto;
+}
+#logo {
+	display: none;
+}
+#logo-tablet {
+	position: absolute;
+	margin: -1.5% 0 0 0;
+	width: 25%;
+	max-width: 100%;
+	height: auto;
+	z-index: 11;
+}
+
+
+/* Navigation
+-----------------------------------------*/
+.menu {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+ }
+.main-navigation {
+	width: 100%;
+    clear: both;
+    display: block;
+	text-align: center;
+	font-size: 90%;
+	position: relative;
+	z-index: 10;
+}
+.main-navigation ul {
+    list-style-type: none;
+	padding-left: 0;
+	background: #3f6e8f;
+}
+.main-navigation li {
+	display: inline-block;
+	position: relative;
+	padding: 0 0.5em 0 0.5em;
+}
+.main-navigation a:link, a:visited {
+    display: block;
+	padding: 0.1em 0.25em;
+	font-weight: bold;
+	color: #92c8e2;
+    text-decoration: none;
+	text-transform: uppercase;
+}
+.main-navigation li:hover {
+	background: #1b3c4c;
+	color: #fbfbfb;
+}
+.main-navigation ul ul li:hover {
+	background: #142b36;
+}
+.main-navigation a:active, a:hover {
+	color: #fbfbfb;
+}
+.main-navigation ul ul {
+    background: #1b3c4c;
+	width: 9.5em;
+	display: none;
+    position: absolute;
+        top: 1.7em;
+        left: -1.5em;
+	opacity: 0.9;
+}
+.main-navigation ul ul a {
+	width: 9em;
+}
+.main-navigation ul ul li {
+	display: block;
+	width: 100%;
+	text-align: left;
+	/*margin: 0 0 0 -30%; */
+}
+.main-navigation ul ul ul {
+    left: 100%;
+    top: -0.15em;
+	z-index: 1;
+}
+.main-navigation ul li:hover > ul {
+    display: block;
+}
+
+
+#tertiary img {
+	margin: 15% 0 0 8%;
+}
+#tertiary p {
+	margin: 0 0 0 20%
+}
+
+/* Carousel */
+
+h2{
+    margin: 0;     
+    color: #666;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;    
+}
+.item{
+    background: #333;    
+    text-align: center;
+    height: 300px !important;
+}
+.carousel{
+    margin-top: 20px;
+}
+.bs-example{
+	float: right;
+	margin: 0 2.5% 0 0;
+	width: 65%;
+}
