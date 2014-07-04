@@ -265,43 +265,34 @@ body {
 }
 #main {
 	position: relative;
-	margin: 3.9% 0 0 2%;
+	margin: 8% 0 0 0;
     overflow: hidden;
-	width: 83%;
+	width: 100%;
 	background: #fbfbfb;
-	border-right: 1px solid #a8bdb9;
-	border-left: 1px solid #a8bdb9;
-	border-bottom: 1px solid #a8bdb9;
+	border: 0;
 }
 #content {
-	padding-top: 2em;
-	padding-left: .5em;
-	width: 66%;
+	padding: 1em 1em 0 1em;
+	width: 100%;
 	min-width: 20em;
 	min-height: 100%;
-	float: right;
-	margin: 0 2% 0 0;
+	float: left;
+	margin: 0;
 	background: #fbfbfb;
 }
 #secondary { /* Sidebar */
-	margin: -28% 0 0 0;
+	margin: 0;
 	padding-left: 1.5em;
 	padding-right: 1.5em;
 	float: left;
 	overflow: hidden;
 	background: #ededed;
-	border: 1px solid #ededed;
-	width: 29.4%;
+	border: 0;
+	width: 100%;
 	border-bottom-left-radius: 6px;
 }
 #tertiary {  /* Sponsorit */
-	clear: both;
-	padding-top: 4em;
-	position: fixed;
-	margin: -4.5% 0 0 85%;
-    width: 15%;
-	background: #205169;
-	color: #4e7588;
+	display: none;
 }
 #tertiary-mobile {
 	display: none;
@@ -310,7 +301,7 @@ body {
 	margin: 15% 0 0 15%;
 }
 #tertiary p {
-	margin: 0 0 0 25%
+	margin: 0 0 0 20%
 }
 footer {
 	clear: both;
@@ -328,16 +319,11 @@ header {
 }
 #logo {
 	display: none;
-	position: absolute;
-	margin: -2.8% 0 0 0;
-	width: 25%;
-	max-width: 100%;
-	height: auto;
-	z-index: 999;
 }
 #logo-tablet {
 	display: none;
 }
+
 
 /* Navigation
 -----------------------------------------*/
@@ -348,7 +334,10 @@ header {
 	border-radius: 0;
 	min-height: 1px;
 	font-size: 90%;
-	z-index: 99999999;
+}
+.navbar-toggle {
+	border: 0;
+	background: #97a0ad;
 }
 .navbar .navbar-nav {
 	display: inline-block;
@@ -356,6 +345,7 @@ header {
 }
 .navbar .navbar-collapse {
 	text-align: center;
+	border: 0;
 }
 .dropdown-menu{
 	border: 0;
@@ -403,7 +393,6 @@ header {
 	color: #fbfbfb;
 }
 
-
 /* Carousel */
 
 h2{
@@ -419,10 +408,12 @@ h2{
     height: 300px !important;
 }
 .carousel{
-    margin-top: 20px;
+    margin: 0;
 }
 .carousel-container{
-	float: right;
+	display: none;
+	width: 100%;
+	float: none;
+	font-size: 80%;
 	margin: 0 2.5% 0 0;
-	width: 65%;
 }

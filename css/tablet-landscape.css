@@ -265,9 +265,9 @@ body {
 }
 #main {
 	position: relative;
-	margin: 3.9% 0 0 2%;
+	margin: 8% 0 0 0;
     overflow: hidden;
-	width: 83%;
+	width: 85%;
 	background: #fbfbfb;
 	border-right: 1px solid #a8bdb9;
 	border-left: 1px solid #a8bdb9;
@@ -284,7 +284,7 @@ body {
 	background: #fbfbfb;
 }
 #secondary { /* Sidebar */
-	margin: -28% 0 0 0;
+	margin: -40% 0 0 0;
 	padding-left: 1.5em;
 	padding-right: 1.5em;
 	float: left;
@@ -296,9 +296,9 @@ body {
 }
 #tertiary {  /* Sponsorit */
 	clear: both;
-	padding-top: 4em;
+	padding-top: 3em;
 	position: fixed;
-	margin: -4.5% 0 0 85%;
+	margin: -4% 0 0 85%;
     width: 15%;
 	background: #205169;
 	color: #4e7588;
@@ -307,10 +307,10 @@ body {
 	display: none;
 }
 #tertiary img {
-	margin: 15% 0 0 15%;
+	margin: 15% 0 0 8%;
 }
 #tertiary p {
-	margin: 0 0 0 25%
+	margin: 0 0 0 20%
 }
 footer {
 	clear: both;
@@ -328,27 +328,24 @@ header {
 }
 #logo {
 	display: none;
-	position: absolute;
-	margin: -2.8% 0 0 0;
-	width: 25%;
-	max-width: 100%;
-	height: auto;
-	z-index: 999;
 }
 #logo-tablet {
-	display: none;
+	position: absolute;
+	margin: -1.5% 0 0 0;
+	width: 50em;
+	max-width: 100%;
+	height: auto;
+	z-index: 11;
 }
 
 /* Navigation
 -----------------------------------------*/
-
 .navbar {
 	background: #3f6e8f;
 	border: 0;
 	border-radius: 0;
 	min-height: 1px;
 	font-size: 90%;
-	z-index: 99999999;
 }
 .navbar .navbar-nav {
 	display: inline-block;
@@ -402,7 +399,6 @@ header {
 	background: #142b36;
 	color: #fbfbfb;
 }
-
 
 /* Carousel */
 

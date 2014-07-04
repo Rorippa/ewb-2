@@ -42,64 +42,81 @@ $(document).ready(function(){
 </script>
 
 <link rel="stylesheet" media="screen and (min-width: 1025px)" href="css/style.css" />
-<link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="css/tablet.css" />
-<link rel="stylesheet" media="screen and (max-width: 767px)" href="css/smartphone.css" />
+<link rel="stylesheet" media="screen and (min-width: 990px) and (max-width: 1100px)" href="css/tablet-landscape.css" />
+<link rel="stylesheet" media="screen and (min-width: 800px) and (max-width: 989px)" href="css/tablet-portrait.css" />
+<link rel="stylesheet" media="screen and (min-width: 640px) and (max-width: 799px)" href="css/smartphone-landscape.css" />
+<link rel="stylesheet" media="screen and (max-width: 639px)" href="css/smartphone-portrait.css" />
 
 
 </head>
 
 <body>
 	
-	<nav role="navigation" class="main-navigation">
-		<ul class="menu">
-			<li><a href="#">Organisation</a>
-				<ul>
-					<li><a href="#">Board</a></li>
-					<li><a href="#">Sponsors</a></li>
-					<li><a href="#">Documents</a></li>
-				</ul>
-			</li>
-			<li><a href="#">Projects</a>
-				<ul>
-					<li><a href="#">Past Projects</a>
-				</ul>
-			</li>
-			<li><a href="#">News</a></li>
-			<li><a href="#">Events</a></li>
-			<li><a href="#">Get involved</a>
-				<ul>
-					<li><a href="#">Join us</a></li>
-					<li><a href="#">Contact us</a></li>
-				</ul>
-			</li>
-			<li><a href="#">Old site</a></li>
-		</ul>
-	</nav><!-- .main-navigation -->
-	
 	<header>
 		<a href="home.html"><img src="insiniors.jpg" id="logo" /></a>
-		<a href="home.html"><img src="insiniors_tablet.png" id="logo-tablet" /></a>
+		<a href="home.html"><img src="lamppu.jpg" id="logo-tablet" /></a>
 	</header>
 	
-	<div id="tertiary">
+	<nav role="navigation" class="navbar navbar-default">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Collection of nav links, forms, and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+					<a data-toggle="dropdown" class="dropdown-toggle" href="#">Organisation<b class="caret"></b></a>
+				    <ul role="menu" class="dropdown-menu">
+                        <li><a href="#">Board</a></li>
+                        <li><a href="#">Sponsors</a></li>
+                        <li><a href="#">Documents</a></li>
+                    </ul>
+				</li>
+                <li class="dropdown">
+					<a data-toggle="dropdown" class="dropdown-toggle" href="#">Projects<b class="caret"></b></a>
+					<ul role="menu" class="dropdown-menu">
+                        <li><a href="#">Past Projects</a></li>
+					</ul>
+				</li>
+                <li>
+                    <a href="#">News</a>
+                </li>
+				<li>
+                    <a href="#">Events</a>
+                </li>
+				<li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Get involved<b class="caret"></b></a>
+					<ul role="menu" class="dropdown-menu">
+						<li><a href="#">Join us</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+                </li>
+				<li>
+                    <a href="#">Old site</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+	
+	<div id="tertiary"><!-- Sponsorit tähän -->
 	<img src="http://placehold.it/140x100">
 	<p>Sponsor 1</p>
 	<img src="http://placehold.it/140x100">
 	<p>Sponsor 2 </p>
 	<img src="http://placehold.it/140x100">
 	<p>Sponsor 3 </p>
-	<img src="http://placehold.it/140x100">
-	<p>Sponsor 4 </p>
-	<img src="http://placehold.it/140x100">
-	<p>Sponsor 5</p>
-	<img src="http://placehold.it/140x100">
-	<p>Sponsor 6</p>
-	</div>
+	</div>	
 	
 	<div id="main" class="site-main">
 	
 	
-	<div class="bs-example">
+	<div class="carousel-container">
     <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
     	<!-- Carousel indicators -->
         <ol class="carousel-indicators">
@@ -141,14 +158,14 @@ $(document).ready(function(){
     </div>
 </div>
 		
-		<div id="content" class="site-content" role="main">
+		<div id="content" class="site-content" role="main"> <!-- Sisältö tähän -->
 		<p>Suomen Insinöörit ilman rajoja ry toimii yhteistyössä Engineers Without Borders International -yhdistyksen ja sen muiden alajärjestöjen kanssa. Yhdistys pyrkii parantamaan ihmisten elintasoa kehittyvissä maissa, tuomaan koulutusta ja tietoa kaikkien ulottuville ja tuomaan apua kriiseihin maailmalla.</p>
 		<p>Pyrimme löytämään käytännöllisiä ratkaisuja puhtaan juomaveden tuottamiseen, maanviljelyyn, rakennustekniikkaan, energiantuotantoon, liikennöintiin ja tiedonvälitykseen. Tuemme kestävää kehitystä, josta on iloa monille tuleville sukupolville.</p>
 		<p>Toivotamme kaikki kiinnostuneet tervetulleiksi mukaan toimintaamme. Jäseneksi voi liittyä milloin vain.</p>
 		</div><!-- #content .site-content -->
 		
-		<div id="secondary">
-<h1>Habent enim et bene longam et satis litigiosam disputationem.</h1>
+		<div id="secondary"><!-- Uutiset tähän -->
+<h3>Habent enim et bene longam et satis litigiosam disputationem.</h3>
 
 <p><a href="#">Lorem ipsum</a></p>
 
@@ -167,7 +184,16 @@ $(document).ready(function(){
 <p>Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Tubulum fuisse, qua illum, cuius is condemnatus est rogatione, P. Haec dicuntur fortasse ieiunius; Mihi enim erit isdem istis fortasse iam utendum. Summus dolor plures dies manere non potest? An tu me de L. </p>
 
 
-		</div><!-- #secondary .widget-area -->
+		</div><!-- #secondary -->
+		
+	<div id="tertiary-mobile"><!-- Sponsorit tähän -->
+	<img src="http://placehold.it/140x100">
+	<p>Sponsor 1</p>
+	<img src="http://placehold.it/140x100">
+	<p>Sponsor 2 </p>
+	<img src="http://placehold.it/140x100">
+	<p>Sponsor 3 </p>
+	</div>
 	
 	</div><!-- #main .site-main -->
 	
