@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--#include file="includes/head.html" -->
+	
+</head>
+
+<body>
+	<!-- Yläpalkki -->
+	<!--#include file="includes/header.html" -->
+	
+	<!-- Navigaatio -->
+	<!--#include file="includes/navigation.html" -->
+	
+	<!-- Mobiilisponsorit -->
+	<!--#include file="includes/mobilesponsors.html" -->
+
+	<!-- Sponsorit -->
+	<!--#include file="includes/sidebarsponsors.html" -->
+
+	
+	<div id="main" class="site-main">
+	
+	<!-- Kuvakaruselli -->
+	<!--#include file="includes/carousel.html" -->
+		
+		<div id="content" class="site-content" role="main"> 
+		
+		<!-- Sisältö -->
+		
+		<p>Suomen Insinöörit ilman rajoja ry toimii yhteistyössä Engineers Without Borders International -yhdistyksen ja sen muiden alajärjestöjen kanssa. Yhdistys pyrkii parantamaan ihmisten elintasoa kehittyvissä maissa, tuomaan koulutusta ja tietoa kaikkien ulottuville ja tuomaan apua kriiseihin maailmalla.</p>
+		<p>Pyrimme löytämään käytännöllisiä ratkaisuja puhtaan juomaveden tuottamiseen, maanviljelyyn, rakennustekniikkaan, energiantuotantoon, liikennöintiin ja tiedonvälitykseen. Tuemme kestävää kehitystä, josta on iloa monille tuleville sukupolville.</p>
+		<p>Pyrimme löytämään käytännöllisiä ratkaisuja puhtaan juomaveden tuottamiseen, maanviljelyyn, rakennustekniikkaan, energiantuotantoon, liikennöintiin ja tiedonvälitykseen. Tuemme kestävää kehitystä, josta on iloa monille tuleville sukupolville.</p>
+		
+		</div><!-- #content .site-content -->
+		
+
+		<!-- Uutiset -->
+		<!--#include file="includes/sidebarnews.html" -->
+
+	
+	</div><!-- #main .site-main -->
+	
+	<!-- Jalka -->
+	<!--#include file="includes/footer.html" -->
+
+</body>
+
+</html>

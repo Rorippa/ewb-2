@@ -207,8 +207,15 @@ textarea {
     overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
     padding-left: 3px;
     vertical-align: top; /* Improves readability and alignment in all browsers */
-    width: 98%;
+    width: 70%;
 }
+ label {
+	display: inline-block;
+	text-align: right;
+	width: 130px;
+	font-weight: normal;
+	margin: 5px;
+ }
  
 /* Links */
 a {
@@ -259,6 +266,7 @@ body {
 	font-family: Arial, sans-serif;
 }
 #main {
+	min-height: 25em;
 	position: relative;
 	float: right;
 	margin: 3.5% 2.5% 0 0;
@@ -278,7 +286,7 @@ body {
 	margin: 0;
 }
 #secondary { /* Sidebar */
-	margin: -29% 0 0 0;
+	margin: 0 0 0 0;
 	padding-left: 1.5em;
 	padding-right: 1.5em;
 	float: right;

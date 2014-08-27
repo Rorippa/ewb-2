@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--#include file="includes/head.html" -->
+	
+</head>
+
+<body>
+	<!-- Yläpalkki -->
+	<!--#include file="includes/header.html" -->
+	
+	<!-- Navigaatio -->
+	<!--#include file="includes/navigation.html" -->
+	
+	<!-- Mobiilisponsorit -->
+	<!--#include file="includes/mobilesponsors.html" -->
+
+	<!-- Sponsorit -->
+	<!--#include file="includes/sidebarsponsors.html" -->
+
+	
+	<div id="main" class="site-main">
+		
+		<div id="content" class="site-content" role="main"> 
+		
+		<!-- Sisältö -->
+		
+		<form>
+		<p>
+		<label for="nimi">Nimi*:</label><input type="text" name="nimi" maxlength="50" required><br />
+		<label for="email">Sähköposti*:</label><input type="email" name="email" maxlength="50" required>
+		</p>
+		Viesti:<br />
+		<textarea rows="5" cols="10" maxlength="1000"></textarea><br />
+		<input type="submit" value="Lähetä">
+		</form>
+		
+		</div><!-- #content .site-content -->
+		
+
+		<!-- Uutiset -->
+		<!--#include file="includes/sidebarnews.html" -->
+
+	
+	</div><!-- #main .site-main -->
+	
+	<!-- Jalka -->
+	<!--#include file="includes/footer.html" -->
+
+</body>
+
+</html>

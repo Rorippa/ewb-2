@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--#include file="includes/head.html" -->
+	
+</head>
+
+<body>
+	<!-- Yläpalkki -->
+	<!--#include file="includes/header.html" -->
+	
+	<!-- Navigaatio -->
+	<!--#include file="includes/navigation.html" -->
+	
+	<!-- Mobiilisponsorit -->
+	<!--#include file="includes/mobilesponsors.html" -->
+
+	<!-- Sponsorit -->
+	<!--#include file="includes/sidebarsponsors.html" -->
+
+	
+	<div id="main" class="site-main">
+		
+		<div id="content" class="site-content" role="main"> 
+		
+		<!-- Sisältö -->
+		
+		<b>Puheenjohtaja:</b> Jarno Parviainen<br />
+		<b>Varapuheenjohtaja:</b> Antti Tohka<br />
+		<b>Rahastonhoitaja:</b> Samir Puuska<br />
+		Markku Komonen<br />
+		Valeria Poliakova
+		
+		</div><!-- #content .site-content -->
+		
+
+		<!-- Uutiset -->
+		<!--#include file="includes/sidebarnews.html" -->
+
+	
+	</div><!-- #main .site-main -->
+	
+	<!-- Jalka -->
+	<!--#include file="includes/footer.html" -->
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--#include file="includes/head.html" -->
+	
+</head>
+
+<body>
+	<!-- Yläpalkki -->
+	<!--#include file="includes/header.html" -->
+	
+	<!-- Navigaatio -->
+	<!--#include file="includes/navigation.html" -->
+	
+	<!-- Mobiilisponsorit -->
+	<!--#include file="includes/mobilesponsors.html" -->
+
+	<!-- Sponsorit -->
+	<!--#include file="includes/sidebarsponsors.html" -->
+
+	
+	<div id="main" class="site-main">
+		
+		<div id="content" class="site-content" role="main"> 
+		
+		<!-- Sisältö -->
+		<form>
+		<label for="etunimi">Etunimi:</label> <input type="text" name="etunimi" maxlength="50"><br />
+		<label for="sukunimi">Sukunimi:</label> <input type="text" name="sukunimi" maxlength="50"><br />
+		<label for="osoite">Lähiosoite:</label> <input type="text" name="osoite" maxlength="100"><br />
+		<label for="postinumero">Postinumero:</label> <input type="text" name="postinumero" maxlength="20"><br />
+		<label for="postitoimipaikka">Postitoimipaikka:</label> <input type="text" name="postitoimipaikka" maxlength="30"><br />
+		<label for="maa">Maa:</label> <input type="text" name="maa" maxlength="30"><br />
+		<label for="sähköposti">Sähköposti:</label> <input type="email" name="sähköposti" maxlength="30"><br />
+		<label for="syntymäaika">Syntymäaika:</label> <input type="text" name="syntymäaika" maxlength="20"><br />
+		<label for="jäsenyys">Tavallinen jäsen</label><input type="radio" name="jäsenyys" value="tavallinen"><br />
+		<label for="jäsenyys">Opiskelijajäsen</label><input type="radio" name="jäsenyys" value="opiskelija"><br />
+		Lisätiedot:<br /> <textarea rows="5" cols="25" maxlength="1000"></textarea><br />
+		<input type="submit" value="Lähetä">
+		</form>
+		
+		</div><!-- #content .site-content -->
+		
+
+		<!-- Uutiset -->
+		<!--#include file="includes/sidebarnews.html" -->
+
+	
+	</div><!-- #main .site-main -->
+	
+	<!-- Jalka -->
+	<!--#include file="includes/footer.html" -->
+
+</body>
+
+</html>

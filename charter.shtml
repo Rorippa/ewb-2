@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--#include file="includes/head.html" -->
+	
+</head>
+
+<body>
+	<!-- Yläpalkki -->
+	<!--#include file="includes/header.html" -->
+	
+	<!-- Navigaatio -->
+	<!--#include file="includes/navigation.html" -->
+	
+	<!-- Mobiilisponsorit -->
+	<!--#include file="includes/mobilesponsors.html" -->
+
+	<!-- Sponsorit -->
+	<!--#include file="includes/sidebarsponsors.html" -->
+
+	
+	<div id="main" class="site-main">
+		
+		<div id="content" class="site-content" role="main"> 
+		
+		<!-- Sisältö -->
+		
+		<ol>
+		<li>Yhdistyksen nimi ja kotipaikka</li>
+		<p>Yhdistyksen nimi on Insinöörit ilman rajoja ry ja sen kotipaikka on Espoo.</p>
+		<li>Tarkoitus ja toiminnan laatu</li>
+		<p>Yhdistys on poliittisesti ja uskonnollisesti sitoutumaton, voittoa tuottamaton yhdistys, jonka tarkoituksen on edistää inhimillistä kehitystä soveltuvan ja kestävän teknologian ja insinööritaidon avulla sekä lisätä jäsentensä ja yleisön tietoisuutta tärkeistä kehityskysymyksistä kuten koulutuksesta, terveydestä, ravinnosta, asumisesta, tiedonvälityksestä ja ympäristöstä sekä teknologian mahdollisuuksista niiden ratkaisemisessa.
+		</p>
+		<p>
+		Tarkoituksensa toteuttamiseksi yhdistys
+		<ul>
+		<li>kouluttaa jäsenkuntaansa esim. kehitykseen ja teknologiaan liittyvissä asioissa</li>
+		<li>järjestää tiedotus- ja keskustelutilaisuuksia</li>
+		<li>tiedottaa ajankohtaisista ja tärkeistä aiheista eri kanavilla</li>
+		<li>järjestää tapaamisia jäsentensä sekä tekniikan ja kehityksen asiantuntijoiden kesken</li>
+		<li>toteuttaa projekteja yhdessä muiden tahojen kanssa Suomessa ja muualla maailmassa</li>
+		<li>tekee tutkimustyötä kehityskysymysten ja teknisten ratkaisujen alueella</li>
+		</ul>
+		</p>
+		<p>
+		Toimintansa tukemiseksi yhdistys
+		<ul>
+		<li>hakee apurahoja ja stipendejä</li>
+		<li>perii jäseniltään jäsenmaksua</li>
+		<li>ottaa vastaan lahjoituksia</li>
+		</ul>
+		</p>
+		<li>Jäsenet</li>
+		<p>Yhdistyksen varsinaiseksi jäseneksi voidaan hyväksyä insinööri tai muukin henkilö, joka hyväksyy yhdistyksen tarkoituksen.</p>
+
+		<p>Kannatusjäseneksi voidaan hyväksyä yksityinen henkilö tai oikeuskelpoinen yhteisö, joka haluaa tukea yhdistyksen tarkoitusta ja toimintaa.</p>
+
+		<p>Varsinaiset jäsenet ja kannattavat jäsenet hyväksyy hakemuksesta yhdistyksen hallitus.</p>
+
+		<p>Kunniapuheenjohtajaksi tai kunniajäseneksi voidaan hallituksen esityksestä yhdistyksen kokouksessa kutsua henkilö, joka on huomattavasti edistänyt ja tukenut yhdistyksen toimintaa.</p>
+		
+		<li>Jäsenen eroaminen ja erottaminen</li>
+		<p>Jäsenellä on oikeus erota yhdistyksestä ilmoittamalla siitä kirjallisesti hallitukselle tai sen puheenjohtajalle tai ilmoittamalla erosta yhdistyksen kokouksessa merkittäväksi pöytäkirjaan.</p>
+		</ol>
+		
+		</div><!-- #content .site-content -->
+		
+
+		<!-- Uutiset -->
+		<!--#include file="includes/sidebarnews.html" -->
+
+	
+	</div><!-- #main .site-main -->
+	
+	<!-- Jalka -->
+	<!--#include file="includes/footer.html" -->
+
+</body>
+
+</html>

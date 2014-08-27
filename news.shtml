@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--#include file="includes/head.html" -->
+	
+</head>
+
+<body>
+
+	<!-- Yläpalkki -->
+	<!--#include file="includes/header.html" -->
+	
+	<!-- Navigaatio -->
+	<!--#include file="includes/navigation.html" -->
+	
+	<!-- Mobiilisponsorit -->
+	<!--#include file="includes/mobilesponsors.html" -->
+
+	<!-- Sponsorit -->
+	<!--#include file="includes/sidebarsponsors.html" -->
+
+	<div id="main" class="site-main">
+		
+		<div id="content" class="site-content" role="main"> 
+		
+		<!-- Sisältö -->
+		
+		<p>Insinöörit ilman rajoja ry:n vuosikokous pidettiin 27.03.2014 Helsingissä Metropolian päärakennuksella.Vaikka yhdistyksen toiminta on ollut neljä vuotta pysähdyksissä, kokoukseen saapui kuitenkin kiitettävästi toiminnasta kiinnostuneita entisiä ja mahdollisia uusia jäseniä. Kokouksessa päätettiin toiminnan jatkamisesta uuden hallituksen voimin. Yhdistyksen jäsenmaksut säilyvät ennallaan. Kokouksen pöytäkirja ja toimintasuunnitelma ovat nähtävissä täällä.</p>
+	
+		</div><!-- #content .site-content -->
+		
+		<!-- Uutiset -->
+	
+	</div><!-- #main .site-main -->
+	
+	<!-- Jalka -->
+	<!--#include file="includes/footer.html" -->
+
+</body>
+
+</html>
